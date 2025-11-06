@@ -1,8 +1,11 @@
 package com.example.prak5_209
 
+import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
+import androidx.navigation.NavHost
+import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 
 enum class Navigasi{
@@ -12,6 +15,7 @@ enum class Navigasi{
 
 @Composable
 fun DataApp(
-    navController: NavController = rememberNavController(),
+    navController: NavHostController = rememberNavController(),
     modifier: Modifier
-){}
+){
+}
