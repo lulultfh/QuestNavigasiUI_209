@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import com.example.prak5_209.R
 
@@ -35,6 +36,9 @@ fun TampilData(
             )
         }) { isiRuang ->
         Column(modifier = Modifier.padding(paddingValues = isiRuang),
-            verticalArrangement = Arrangement.SpaceBetween) {  }
+            verticalArrangement = Arrangement.SpaceBetween) {
+            Column(modifier = Modifier.padding(all = dimensionResource(id = R.dimen.padding_medium)),
+                verticalArrangement = Arrangement.spacedBy(space = dimensionResource(id = R.dimen.padding_small))) {  }
+        }
     }
 }
